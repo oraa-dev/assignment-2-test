@@ -2,6 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
+body{
+  min-height: 100vh;
+}
+
 .quicksand-font{
     font-family: "Quicksand", serif;
     font-optical-sizing: auto;
@@ -29,7 +33,7 @@
     display: flex;
   }
   
-  .logo img {
+  .logo img {         
     width: 3.5rem;
     height: 3.5rem;
   }
@@ -62,11 +66,13 @@
     font-size: 15px;
  }
 
+
  #orange{
   color: orange;
   font-size: 15px;
   font-weight: 500;
  }
+ 
 
  #skyblue{
   color: skyblue;
@@ -85,6 +91,179 @@
   font-size: 15px;
   font-weight: 500;
  }
+ .hamburg-icon{
+  display: none;
+ }
+
+ .sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  padding: 25px;
+  padding-left: 15px;
+  /* backdrop-filter: blur(10px); */
+  background-color: rgb(255, 255, 255);
+  box-shadow: -10px 0px 10px rgb(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+ }
+ 
+ .sidebar li{
+  width: 100%;
+  padding-bottom: 10px;
+  font-weight: 600;
+  font-size: 20px;
+ }
+
+/****** Hero-Banner Section Style ******/
+.hero{
+  display: flex;
+}
+
+.bannercontent{
+  margin-top: 130px;
+  margin-left: 110px;
+ }
+
+ .bannerimg{
+  margin-right: 110px;
+  margin-left: 30px;
+ }
+
+ .bannerheading{
+  font-weight: bold;
+  font-size: 45px;
+  max-width: 630px;
+  max-height: 180px;
+  margin-bottom: 0px;
+ }
+
+ .bannertext{
+  font-weight: 400;
+  font-size: 17px;
+  
+ }
+
+ #orangetittle{
+  color: orange;
+ }
+
+ #skybluetittle{
+  color: rgb(91, 209, 255);
+ }
+
+ .bannerbutton{
+  background-color: black;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 8px;
+  border: none;
+ }
+
+ .bannerbutton > a{
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: bold;
+ 
+ }
+
+
+ /*********** Standard Curriculum Section Style ************/
+
+ .StandardTittle{
+  display: flex;
+  justify-content: center;  
+  margin-top: 50px;
+  margin-bottom: 70px; 
+  font-size: 30px;
+ }
+
+ .standardsec{
+  display: flex;
+  gap: 30px;
+ }
+
+ .standardseccard{
+  border: 2px solid rgb(192, 192, 192);
+  display: block;
+  justify-content: center;
+
+  align-items: center;
+ }
+
+ .standardseccard > h3{
+  text-align: center;
+ }
+
+ .standardseccard > p{
+ text-align: center;
+ }
+
+ .standardseccard > a{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+ }
+ 
+ .standardseccard > img{
+  margin-top: 2em;
+  margin-left: 8.5em;
+ }
+  
+ .boxcard{
+ margin-bottom: 100px;
+ }
+
+
+/******* Responsive Media Query *******/
+
+@media screen and (max-width:576px){
+  
+  /* *{
+  margin: 0;
+  padding: 0;
+  } */
+  body{
+  min-height: 100vh;
+  }
+  .hideOnMobile{
+    display: none;
+  }
+  .hamburg-icon{
+    display: block;
+    margin-right:0px;
+  }
+
+  .logo > img{
+    margin-left: 0px;
+  }
+
+  .school{
+    border-bottom: 2px solid orange;
+  }
+
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
